@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Bullets : MonoBehaviour {
+public class Bullet : MonoBehaviour {
 
 	public bool debug = false;
 	public GameObject Cuttlefish;
@@ -72,7 +72,7 @@ public class Bullets : MonoBehaviour {
 	 			audio.clip = enemyDeath;
 		 		if( !audio.isPlaying) {
 		 			//if( debug ) Debug.Log("play collision");
-		 			audio.Play();
+		 			//audio.Play();
 				}
 				
 				Destroy(gameObject);

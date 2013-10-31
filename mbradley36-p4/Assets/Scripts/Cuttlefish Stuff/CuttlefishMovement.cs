@@ -23,8 +23,7 @@ public class CuttlefishMovement : MonoBehaviour {
 	public float angerBarHeight; 
 	
 	public RageHandler rageHandler;
-	
-
+	public CuttlefishShooter shooter;
 	
 	// Use this for initialization
 	void Start () {
@@ -69,28 +68,7 @@ public class CuttlefishMovement : MonoBehaviour {
 		
 		if(Input.GetKey(KeyCode.Space))
 		{
-			Vector3 difference = Vector3.right*Random.Range(-0.15f,0.15f)+Vector3.up*Random.Range(-0.15f,0.15f);
-			
-			float bulletSizeMax = 5.0f;
-			Bullets b = (Instantiate(beam,beamPosition.transform.position+difference,transform.rotation) as GameObject).GetComponent<Bullets>();
-			b.transform.localScale*=(1+rageHandler.getRatio()*bulletSizeMax);
-			
-			b.transform.parent = transform.parent;
-			
-			b.origPosition = beamPosition.transform.position;
-			if(facingRight)
-			{
-				b.mvmntVector = Vector3.right;
-				
-				moveDirection-=(Vector3.left+-1*difference)*moveBackAmnt;
-			}
-			else
-			{
-				b.mvmntVector = Vector3.left;
-				
-				moveDirection+=(Vector3.right+-1*difference)*moveBackAmnt;
-			}
-			
+			shooter.shoot(beam,rageHandler, moveDirection, facingRight);
 			
 			if(transform.localScale.y>minShrinkVal)
 			{

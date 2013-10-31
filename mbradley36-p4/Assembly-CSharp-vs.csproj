@@ -44,19 +44,19 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AttackEnemy.cs" />
-     <Compile Include="Assets\Scripts\BasicEnemy.cs" />
-     <Compile Include="Assets\Scripts\Bullets.cs" />
-     <Compile Include="Assets\Scripts\CameraMoving.cs" />
-     <Compile Include="Assets\Scripts\CuttlefishBehavior.cs" />
-     <Compile Include="Assets\Scripts\CuttlefishMovement.cs" />
-     <Compile Include="Assets\Scripts\EndLevelPoint.cs" />
-     <Compile Include="Assets\Scripts\EnemyController.cs" />
-     <Compile Include="Assets\Scripts\EnemyFish.cs" />
-     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
+     <Compile Include="Assets\Scripts\Cuttlefish Stuff\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Cuttlefish Stuff\CuttlefishMovement.cs" />
+     <Compile Include="Assets\Scripts\Cuttlefish Stuff\CuttlefishShooter.cs" />
+     <Compile Include="Assets\Scripts\Cuttlefish Stuff\RandomShooter.cs" />
+     <Compile Include="Assets\Scripts\Enemy Stuff\AttackEnemy.cs" />
+     <Compile Include="Assets\Scripts\Enemy Stuff\BasicEnemy.cs" />
+     <Compile Include="Assets\Scripts\Enemy Stuff\EnemyController.cs" />
      <Compile Include="Assets\Scripts\GUITextSceneTransfer.cs" />
+     <Compile Include="Assets\Scripts\LevelStuff\CameraMoving.cs" />
+     <Compile Include="Assets\Scripts\LevelStuff\EndLevelPoint.cs" />
+     <Compile Include="Assets\Scripts\LevelStuff\RageHandler.cs" />
      <Compile Include="Assets\Scripts\MovingTextureCheck.cs" />
-     <Compile Include="Assets\Scripts\RageHandler.cs" />
+     <Compile Include="Assets\Scripts\Powerup.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

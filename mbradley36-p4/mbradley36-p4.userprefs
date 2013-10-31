@@ -1,11 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Powerup.cs">
     <Files>
-      <File FileName="Assets/Scripts/Bullets.cs" Line="65" Column="24" />
-      <File FileName="Assets/Scripts/BasicEnemy.cs" Line="92" Column="14" />
-      <File FileName="Assets/Scripts/RageHandler.cs" Line="31" Column="3" />
-      <File FileName="Assets/Scripts/EnemyController.cs" Line="31" Column="61" />
+      <File FileName="Assets/Scripts/Cuttlefish Stuff/CuttlefishMovement.cs" Line="14" Column="2" />
+      <File FileName="Assets/Scripts/Cuttlefish Stuff/CuttlefishShooter.cs" Line="13" Column="90" />
+      <File FileName="Assets/Scripts/Cuttlefish Stuff/Bullet.cs" Line="4" Column="20" />
+      <File FileName="Assets/Scripts/Enemy Stuff/EnemyController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Powerup.cs" Line="21" Column="3" />
+      <File FileName="Assets/Scripts/Enemy Stuff/BasicEnemy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemy Stuff/AttackEnemy.cs" Line="36" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +16,10 @@
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="EnemyController.cs" selected="True" />
+                <Node name="Cuttlefish Stuff" expanded="True" />
+                <Node name="Enemy Stuff" expanded="True" />
+                <Node name="LevelStuff" expanded="True" />
+                <Node name="Powerup.cs" selected="True" />
               </Node>
             </Node>
           </Node>
