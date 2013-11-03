@@ -25,11 +25,15 @@ public class CuttlefishMovement : MonoBehaviour {
 	public RageHandler rageHandler;
 	public CuttlefishShooter shooter;
 	
+	private float shootPeriod = 0.25f;
+	private float shootPCounter = 0.0f;
+	
 	// Use this for initialization
 	void Start () {
 		goalRotation = Quaternion.Euler(new Vector3(0,180,0));
 		facingRight = true;
 		origSpeedVal = speed;
+		shootPeriod += rageHandler.getRatio();
 		
 		angerBarHeight = Screen.height/rageHandler.divisorForRageMeter;
 		
@@ -37,6 +41,8 @@ public class CuttlefishMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		shootPeriod = 0.25f+(rageHandler.getRatio());
+		
 		Vector3 moveDirection = new Vector3(-1*Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0f);
 		float maxSpeedBoost = 5.0f;
         moveDirection = transform.TransformDirection(moveDirection);
@@ -68,8 +74,16 @@ public class CuttlefishMovement : MonoBehaviour {
 		
 		if(Input.GetKey(KeyCode.Space))
 		{
-			shooter.shoot(beam,rageHandler, moveDirection, facingRight);
 			
+			shootPCounter += Time.deltaTime;
+			if(shootPCounter < shootPeriod){
+				shooter.shoot(beam,rageHandler, moveDirection, facingRight);
+			}
+			else if (shootPCounter < shootPeriod + 0.2f){
+			}
+			else if (shootPCounter > shootPeriod + 0.2f){
+				shootPCounter = 0f;
+			}
 			if(transform.localScale.y>minShrinkVal)
 			{
 				transform.localScale-=Vector3.up*Time.deltaTime*5;
@@ -103,5 +117,8 @@ public class CuttlefishMovement : MonoBehaviour {
 		{
 			transform.position = newPos;
 		}
+	}
+	RageHandler getRageHandler(){
+		return rageHandler;
 	}
 }

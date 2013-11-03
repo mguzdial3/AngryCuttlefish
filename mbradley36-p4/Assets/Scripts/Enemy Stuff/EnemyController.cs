@@ -8,7 +8,7 @@ public class EnemyController : MonoBehaviour {
 	
 	public float timerMax = 4.0f;
 	private float timer;
-	public int maxNumEnemies = 5;
+	public int maxNumEnemies = 4;
 	
 	void Update()
 	{

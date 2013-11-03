@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour {
 	public Vector3 mvmntVector = Vector3.right;
 	public float speed =3.0f;
 	public float maxDist=20;
+	public RageHandler rageHandler;
 	
 	public float damage = 1.0f;
 	
@@ -21,7 +22,10 @@ public class Bullet : MonoBehaviour {
 		origColor = renderer.material.color;
 		
 		//Cheat for now to link damage and size/rage
-		damage = transform.localScale.x;
+		//damage = transform.localScale.x;
+		if(rageHandler != null){
+			damage = 1+rageHandler.getRatio();
+		}
 	}
 	
 	
@@ -78,5 +82,9 @@ public class Bullet : MonoBehaviour {
 				Destroy(gameObject);
 	 		}
 		}
+	}
+	
+	void setRageHandler(RageHandler rageH){
+		rageHandler = rageH;
 	}
 }

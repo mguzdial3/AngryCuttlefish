@@ -8,11 +8,12 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Cuttlefish Stuff" expanded="True" />
-                <Node name="Enemy Stuff" expanded="True" />
-                <Node name="LevelStuff" expanded="True" />
-                <Node name="Powerups" expanded="True">
-                  <Node name="Powerup.cs" selected="True" />
+                <Node name="Enemy Stuff" expanded="True">
+                  <Node name="BasicEnemy.cs" selected="True" />
                 </Node>
+                <Node name="LevelStuff" expanded="True" />
+                <Node name="Powerups" expanded="True" />
+                <Node name="ShootingTypes" expanded="True" />
               </Node>
             </Node>
           </Node>
