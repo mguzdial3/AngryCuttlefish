@@ -1,18 +1,27 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Cuttlefish Stuff/CuttlefishMovement.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Powerups/DefaultPowerup.cs" Line="9" Column="20" />
+      <File FileName="Assets/Scripts/Cuttlefish Stuff/CuttlefishMovement.cs" Line="21" Column="34" />
+      <File FileName="Assets/Scripts/Cuttlefish Stuff/Bullet.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemy Stuff/EnemyController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemy Stuff/BasicEnemy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemy Stuff/AttackEnemy.cs" Line="40" Column="30" />
+      <File FileName="Assets/Scripts/Powerups/Powerup.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Cuttlefish Stuff" expanded="True" />
+                <Node name="Cuttlefish Stuff" expanded="True">
+                  <Node name="CuttlefishMovement.cs" selected="True" />
+                </Node>
                 <Node name="Enemy Stuff" expanded="True" />
                 <Node name="LevelStuff" expanded="True" />
-                <Node name="Powerups" expanded="True">
-                  <Node name="Powerup.cs" selected="True" />
-                </Node>
+                <Node name="Powerups" expanded="True" />
               </Node>
             </Node>
           </Node>

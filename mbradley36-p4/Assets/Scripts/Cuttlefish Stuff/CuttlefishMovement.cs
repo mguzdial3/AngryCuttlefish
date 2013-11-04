@@ -18,7 +18,7 @@ public class CuttlefishMovement : MonoBehaviour {
 	private bool facingRight = false;
 	
 	private Quaternion goalRotation;
-	private float minShrinkVal = 0.7f;
+	private float minShrinkVal = 0.9f;
 	
 	public float angerBarHeight; 
 	

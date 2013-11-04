@@ -8,6 +8,9 @@ public class AttackEnemy : BasicEnemy {
 	private float timerMax = 1.0f; //Max amount of time for movement
 	private Vector3 currDirection; //The current direction we're moving in
 	
+	public Animation myAnimation;
+	
+	
 	public override void Start ()
 	{
 		base.Start (); //We need to have this to set up the basic info from Basic Enemy 
@@ -26,6 +29,15 @@ public class AttackEnemy : BasicEnemy {
 		{
 			timer=0;
 			currDirection = cuttlefish.transform.position -transform.position;
+		}
+		
+		if(currDirection.x>0)
+		{
+			myAnimation.Play("SwimLeft");
+		}
+		else
+		{
+			myAnimation.Play("SwimRight");
 		}
 		
 		//Move this enemy
